@@ -1,11 +1,9 @@
 package com.patrick;
 import java.util.*;
 public class Main {
-
+//Lakes running log w/ no methods.
     public static void main(String[] args) {
-//        System.out.println("Lake Running Log");
         HashMap mapOfTimes = new HashMap();//Map of lakes (Strings) to lists of mapOfTimes.
-
 
         ArrayList listOfTimesCalhoun = new ArrayList();
         listOfTimesCalhoun.add(43.32);
@@ -26,7 +24,6 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
         String inputLake = scanner.next();//Lake Name.
         Double inputLakeTime = scanner.nextDouble();//Running time.
-
 
         boolean doesContainLake = mapOfTimes.containsKey(inputLake);
         if (!doesContainLake) {
@@ -49,7 +46,6 @@ public class Main {
             //System.out.println(lowestTime);
 
         }
-
     }
     public static Double getQuickestTime(List lakeTimes){
         Double quickestTime = Double.POSITIVE_INFINITY;
